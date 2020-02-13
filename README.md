@@ -11,9 +11,12 @@ A starter app for using NextJS with Auth0 for authentication and Material UI
 To start locally  
 `yarn dev`
 
-# Sources
+# Resources
 The NextJS setup comes from this repo  
 https://github.com/ZEIT/next.js/tree/canary/examples/auth0
 
-The Material UI setup comes from this repo
+The Material UI setup comes from this repo  
 https://github.com/mui-org/material-ui/tree/master/examples/nextjs
+
+Here is a guide on Auth0 with NextJS  
+https://auth0.com/blog/ultimate-guide-nextjs-authentication-auth0/
