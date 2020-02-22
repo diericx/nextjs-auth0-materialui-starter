@@ -1,20 +1,20 @@
-import React from 'react'
-import { makeStyles } from '@material-ui/core/styles';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
 
-import Layout from '../components/layout'
-import { useFetchUser } from '../lib/user'
+import Layout from "../components/layoutDrawer";
+import { useFetchUser } from "../lib/user";
 
 const useStyles = makeStyles(theme => ({
   button: {
-    margin: theme.spacing(1),
+    margin: theme.spacing(1)
   },
   input: {
-    display: 'none',
-  },
+    display: "none"
+  }
 }));
 
 function Home() {
-  const { user, loading } = useFetchUser()
+  const { user, loading } = useFetchUser({ required: true });
   const classes = useStyles();
 
   return (
@@ -29,7 +29,7 @@ function Home() {
             To test the login click in <i>Login</i>
           </p>
           <p>
-            Once you have logged in you should be able to click in{' '}
+            Once you have logged in you should be able to click in{" "}
             <i>Profile</i> and <i>Logout</i>
           </p>
         </>
@@ -44,7 +44,7 @@ function Home() {
         </>
       )}
     </Layout>
-  )
+  );
 }
 
-export default Home
+export default Home;

@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import Header from './header'
+import Head from "next/head";
+import Header from "./header";
 
 function Layout({ user, loading = false, children }) {
   return (
     <>
       <Head>
-        <title>Next.js with Auth0</title>
+        <title>Dashboard</title>
       </Head>
 
       <Header user={user} loading={loading} />
@@ -24,12 +24,12 @@ function Layout({ user, loading = false, children }) {
         body {
           margin: 0;
           color: #333;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-            Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         }
       `}</style>
     </>
-  )
+  );
 }
 
-export default Layout
+export default Layout;
